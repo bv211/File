@@ -30,8 +30,7 @@ void write_file(const string& text) {
 	FILE* file = nullptr;
 	auto error = fopen_s(&file, path, "w");
 
-	if (error != NULL)
-	{
+	if (error != NULL){
 		cout << "Can't open the file" << endl;
 		return;
 	}
